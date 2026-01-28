@@ -15,6 +15,13 @@ nav{
     
     max-width: 1600px;
 }
+/* #nav-section span{
+  display: none;
+  color: #FFFFFF;
+} */
+nav .hamburger{
+  display: none;
+}
 #nav-section{
     display: flex;
     justify-content:space-around;
@@ -44,7 +51,7 @@ nav{
     color: aliceblue;
     font-weight: bold;
 }
-.btn{
+#nav-section .btn{
     border-radius: 100vw;
     padding: 12px 16px;
     border: none;
@@ -53,6 +60,15 @@ nav{
     font-size: 16px;
    
 
+}
+.btn1{
+  border-radius: 100vw;
+    padding: 12px 16px;
+    border: none;
+    background:linear-gradient(rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    color: aliceblue;
+    font-size: 16px;
+   
 }
 .btn3{
     border-radius: 100vw;
@@ -67,24 +83,27 @@ nav{
 }
 .benner-section{
 
-    margin: 101px, 520px;
+    margin: 101px 520px;
 }
 
 
 .banner-container{
    background-image: url(../image/hero-bg.png);
-   min-height: 750px;
-   max-width: 100%;
+   min-height: 100vh;
+   max-width: 100%; 
+   background-size: cover; 
+   background-position: center; 
    background-repeat: no-repeat;
    display: flex;
    justify-content: center;
    align-items: center;
    text-align: center;
+   overflow: hidden;
    
 }
 .banner-container .box-center{
    padding-top: 40px;
-    /* padding-bottom: 101px; */
+    padding-bottom: 101px;
 }
 .banner-container .box-center h2{
     font-size: 60px;
@@ -366,6 +385,7 @@ text-transform: capitalize;
 /* footer section */
 footer{
   background-image: url(../image/footer-bg.png);
+  background-position: center;
   max-width: 1600px;
   min-height: 412px;
 }
